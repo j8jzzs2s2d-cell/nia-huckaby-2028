@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Softball Highlights | Nia Tigist Huckaby - 2028</title>
+  <meta name="description" content="Nia Tigist Huckaby — 2028 Softball Recruiting Profile. Videos, metrics, academics, and contacts." />
+
+  <style>
+    :root{
+      /* Palette matched to your background poster */
+      --bg: #08050C;        /* deep navy */
+      --card: rgba(37, 34, 53, 0.74);  /* midnight purple */
+      --card2: rgba(37, 34, 53, 0.58);
+      --border: rgba(255, 255, 255, 0.12);
+      --text: rgba(255, 255, 255, 0.93);
+      --muted: rgba(195, 194, 210, 0.76); /* lavender-grey */
+      --cyan: #70EFF1;      /* electric cyan */
+      --pink: #C36996;      /* neon magenta */
+      --shadow: 0 14px 45px rgba(0,0,0,0.55);
+      --radius: 18px;
+      --max: 1100px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.35;
+    }
+
+    /* HERO BACKGROUND — place your provided image here */
+    .hero{
+      position: relative;
+      min-height: 92vh;
+      display:flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 26px 16px 18px;
+      overflow:hidden;
+      background: var(--bg);
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute; inset:0;
+      background-image: url("images/bg.jpg"); /* <-- YOUR BACKGROUND IMAGE */
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.05) contrast(1.05);
+      opacity: 0.30; /* readable text while keeping poster feel */
+      transform: scale(1.04);
+      z-index:0;
+    }
+
+    /* neon glow overlays to match your poster */
+    .hero::after{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(900px 520px at 18% 12%, rgba(112,239,241,0.22), transparent 60%),
+        radial-gradient(900px 520px at 82% 22%, rgba(195,105,150,0.22), transparent 60%),
+        linear-gradient(180deg, rgba(8,5,12,0.38), rgba(8,5,12,0.90));
+      z-index:0;
+    }
+
+    .wrap{
+      position:relative;
+      z-index:1;
+      width: min(var(--max), 100%);
+      margin: 0 auto;
+      display:flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    header{
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      font-weight: 800;
+      letter-spacing: .4px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .badge strong{ color: var(--text); }
+
+    .ctaRow{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn{
+      appearance:none;
+      border: 1px solid rgba(112,239,241,0.22);
+      background: rgba(112,239,241,0.06);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight: 900;
+      letter-spacing: .3px;
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      backdrop-filter: blur(10px);
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(112,239,241,0.42);
+      background: rgba(112,239,241,0.10);
+    }
+    .btn.primary{
+      border-color: rgba(195,105,150,0.35);
+      background: rgba(195,105,150,0.10);
+    }
+    .btn.primary:hover{
+      border-color: rgba(195,105,150,0.55);
+      background: rgba(195,105,150,0.14);
+    }
+
+    .titleCard{
+      padding: 18px 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    h1{
+      margin: 0;
+      font-size: clamp(24px, 3.2vw, 40px);
+      letter-spacing: .2px;
+      line-height: 1.05;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.55);
+    }
+    /* subtle cyan emphasis like the poster typography */
+    .titleAccent{
+      color: rgba(112,239,241,0.96);
+      font-weight: 950;
+    }
+
+    /* Sub-title: evenly spaced + bold */
+    .subtitleRow{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      max-width: 560px;
+    }
+    .subtitleRow span{
+      text-align:center;
+      font-weight: 950; /* bold */
+      letter-spacing: .18em;
+      color: rgba(255,255,255,0.90);
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(112,239,241,0.28);
+      background:
+        linear-gradient(90deg, rgba(112,239,241,0.10), rgba(195,105,150,0.10));
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 960px){
+      .grid{
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: start;
+      }
+    }
+
+    .card{
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--card2);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      overflow:hidden;
+    }
+
+    .cardHeader{
+      padding: 14px 14px 10px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .cardHeader h2{
+      margin:0;
+      font-size: 16px;
+      letter-spacing: .2px;
+    }
+
+    .cardBody{ padding: 14px; }
+
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 520px){
+      .kv{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .item{
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .label{
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .value{
+      font-weight: 850;
+      font-size: 14px;
+      color: var(--text);
+      overflow-wrap: anywhere;
+    }
+    .value a{ color: rgba(112,239,241,0.95); text-decoration:none; }
+    .value a:hover{ text-decoration: underline; }
+
+    .pillRow{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .pill{
+      font-weight: 900;
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.90);
+    }
+    .pill.cyan{
+      border-color: rgba(112,239,241,0.35);
+      background: rgba(112,239,241,0.10);
+    }
+    .pill.pink{
+      border-color: rgba(195,105,150,0.35);
+      background: rgba(195,105,150,0.10);
+    }
+
+    /* Videos */
+    .videoGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 700px){
+      .videoGrid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .video{
+      border-radius: 16px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .ratio{
+      width:100%;
+      aspect-ratio: 16 / 9;
+      background: rgba(0,0,0,0.25);
+    }
+    iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+    }
+
+    /* Gallery */
+    .galleryGrid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @media (min-width: 700px){
+      .galleryGrid{ grid-template-columns: repeat(3, 1fr); }
+    }
+    .thumb{
+      border-radius: 14px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      aspect-ratio: 1 / 1;
+      cursor:pointer;
+      position: relative;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+      transform: scale(1.01);
+      transition: transform .12s ease;
+    }
+    .thumb:hover img{ transform: scale(1.05); }
+
+    .footer{
+      padding: 14px 2px 4px;
+      color: rgba(195,194,210,0.75);
+      font-size: 12px;
+      text-align:center;
+    }
+
+    /* Simple modal */
+    .modal{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      z-index: 999;
+    }
+    .modal.open{ display:flex; }
+    .modalContent{
+      max-width: 920px;
+      width: 100%;
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(37,34,53,0.92);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.65);
+    }
+    .modalTop{
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+    }
+    .modalTop strong{
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+    }
+    .xBtn{
+      border: 1px solid rgba(112,239,241,0.22);
+      background: rgba(112,239,241,0.06);
+      color: rgba(255,255,255,0.92);
+      padding: 8px 10px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight: 950;
+    }
+    .modalImg{
+      width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      display:block;
+      background: rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="hero">
+    <div class="wrap">
+
+      <header>
+        <div class="topbar">
+          <div class="badge">
+            <strong>Recruiting Profile</strong>
+            <span>•</span>
+            <span>Class of 2028</span>
+            <span>•</span>
+            <span>1B / OF</span>
+            <span>•</span>
+            <span>L/L</span>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="mailto:av.huckaby@gmail.com">Email: av.huckaby@gmail.com</a>
+            <a class="btn" href="tel:+17139334136">Call: 713-933-4136</a>
+          </div>
+        </div>
+
+        <div class="titleCard">
+          <h1>Softball Highlights | <span class="titleAccent">Nia Tigist Huckaby</span> - 2028</h1>
+
+          <div class="subtitleRow" aria-label="Focus Grit Determination">
+            <span>Focus</span>
+            <span>Grit</span>
+            <span>Determination</span>
+          </div>
+
+          <div class="pillRow">
+            <span class="pill cyan">Olympia, WA</span>
+            <span class="pill">Height/Weight: 5’3” / 135lbs</span>
+            <span class="pill cyan">Home → 1B: 3.1s</span>
+            <span class="pill">O/H Velo: 68 mph</span>
+            <span class="pill pink">Exit Velo: 61 mph</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <!-- LEFT COLUMN -->
+        <div class="card">
+          <div class="cardHeader">
+            <h2>Highlight Videos</h2>
+            <div class="badge" style="box-shadow:none;">Tap any video • Mobile friendly</div>
+          </div>
+          <div class="cardBody">
+            <div class="videoGrid" id="videoGrid"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="card">
+          <div class="cardHeader">
+            <h2>Player Snapshot</h2>
+            <div class="badge" style="box-shadow:none;">2028 • 1B/OF • L/L</div>
+          </div>
+          <div class="cardBody">
+
+            <div class="kv">
+              <div class="item">
+                <div class="label">Player</div>
+                <div class="value">Nia Tigist Huckaby</div>
+              </div>
+              <div class="item">
+                <div class="label">Birthday</div>
+                <div class="value">OCT 2028</div>
+              </div>
+              <div class="item">
+                <div class="label">Graduation</div>
+                <div class="value">2028</div>
+              </div>
+              <div class="item">
+                <div class="label">Home Location</div>
+                <div class="value">Olympia, WA</div>
+              </div>
+              <div class="item">
+                <div class="label">Primary / Secondary</div>
+                <div class="value">1B / OF</div>
+              </div>
+              <div class="item">
+                <div class="label">Throw / Bat</div>
+                <div class="value">L / L</div>
+              </div>
+            </div>
+
+            <div style="height:14px;"></div>
+
+            <div class="item">
+              <div class="label">Strengths</div>
+              <div class="value">Character, Contact Hitter, 1B Defense, Leadership</div>
+              <div class="pillRow">
+                <span class="pill pink">Character</span>
+                <span class="pill">Contact Hitter</span>
+                <span class="pill cyan">1B Defense</span>
+                <span class="pill">Leadership</span>
+              </div>
+            </div>
+
+            <div style="height:12px;"></div>
+
+            <div class="item">
+              <div class="label">Improving</div>
+              <div class="value">Power, Speed, Slapping</div>
+            </div>
+
+            <div style="height:14px;"></div>
+
+            <div class="item">
+              <div class="label">Academic Profile</div>
+              <div class="value">
+                GPA: 3.98<br/>
+                Honors/AP: AP English, AP Alegbra 2<br/>
+                Achievement: National Honor Society<br/>
+                Clubs: District Mentorship Program Lead; Club Secretary, Students of Color Association<br/>
+                Additional Sport: Flag Football<br/>
+                Desired Degree: Law<br/>
+                Desired College: West Point Military Academy
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Teams / Coaches -->
+      <section class="grid">
+        <div class="card">
+          <div class="cardHeader">
+            <h2>High School Team</h2>
+          </div>
+          <div class="cardBody">
+            <div class="kv">
+              <div class="item">
+                <div class="label">High School</div>
+                <div class="value">Olympia High School</div>
+              </div>
+              <div class="item">
+                <div class="label">Facebook</div>
+                <div class="value">
+                  <a href="https://www.facebook.com/olympiahighschoolfastpitch" target="_blank" rel="noopener">Olympia HS Fastpitch</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">HS Coach</div>
+                <div class="value">
+                  Drew Wellner — <a href="mailto:dwellner@osd.wednet.edu">dwellner@osd.wednet.edu</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">HS Asst Coach</div>
+                <div class="value">
+                  Rick Crawford — <a href="mailto:ripnlips16@yahoo.com">ripnlips16@yahoo.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardHeader">
+            <h2>Travel Ball</h2>
+          </div>
+          <div class="cardBody">
+            <div class="kv">
+              <div class="item">
+                <div class="label">Team</div>
+                <div class="value">Sabotage NW 16A - Shipe</div>
+              </div>
+              <div class="item">
+                <div class="label">Time with Team</div>
+                <div class="value">4 Years</div>
+              </div>
+              <div class="item">
+                <div class="label">Travel Coach</div>
+                <div class="value">
+                  Josh Shipe — <a href="mailto:jiggin424@gmail.com">jiggin424@gmail.com</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="label">Facebook Page</div>
+                <div class="value">
+                  <a href="https://www.facebook.com/groups/4335106819935553" target="_blank" rel="noopener">Sabotage NW 16A - Shipe (Group)</a>
+                </div>
+              </div>
+            </div>
+
+            <div style="height:12px;"></div>
+
+            <div class="item">
+              <div class="label">Additional Team</div>
+              <div class="value">
+                USSSA All-American Games 14U (West)<br/>
+                Results: 2024 Tournament Championship Winner<br/>
+                Achievement: Tournament Sportsmanship Award Recipient
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="card">
+        <div class="cardHeader">
+          <h2>Photo Gallery</h2>
+          <div class="badge" style="box-shadow:none;">Tap any photo to enlarge</div>
+        </div>
+        <div class="cardBody">
+          <div class="galleryGrid" id="galleryGrid"></div>
+
+          <div style="margin-top:12px; color: var(--muted); font-size: 13px;">
+            Add photos by placing them in <strong>images/</strong> and updating the <strong>galleryImages</strong> list below.
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">
+        © <span id="year"></span> • Nia Tigist Huckaby • Recruiting Profile
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal for gallery -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="modalContent">
+      <div class="modalTop">
+        <strong id="modalTitle">Photo</strong>
+        <button class="xBtn" id="closeBtn" aria-label="Close">Close ✕</button>
+      </div>
+      <img class="modalImg" id="modalImg" alt="Expanded photo" />
+    </div>
+  </div>
+
+  <script>
+    // ======= VIDEO SETUP =======
+    const videoLinks = [
+      "https://youtu.be/gC-NiAlLBrg",
+      "https://youtu.be/MESxSQDAAdw",
+      "https://youtu.be/BGmyRGHOytI",
+      "https://youtube.com/shorts/BVoaIBG-vhA?feature=share",
+      "https://youtube.com/shorts/arwZBX9tRwI?feature=share"
+    ];
+
+    function youtubeIdFromUrl(url){
+      try{
+        const u = new URL(url);
+        if (u.hostname.includes("youtu.be")) return u.pathname.replace("/", "").trim();
+        if (u.searchParams.get("v")) return u.searchParams.get("v");
+        const parts = u.pathname.split("/").filter(Boolean);
+        const shortsIndex = parts.indexOf("shorts");
+        if (shortsIndex !== -1 && parts[shortsIndex + 1]) return parts[shortsIndex + 1];
+        return parts[parts.length - 1] || "";
+      }catch(e){
+        return "";
+      }
+    }
+
+    function renderVideos(){
+      const grid = document.getElementById("videoGrid");
+      grid.innerHTML = "";
+      videoLinks.forEach((link, idx) => {
+        const id = youtubeIdFromUrl(link);
+        if (!id) return;
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "video";
+
+        const ratio = document.createElement("div");
+        ratio.className = "ratio";
+
+        const iframe = document.createElement("iframe");
+        iframe.loading = "lazy";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowFullscreen = true;
+        iframe.src = `https://www.youtube.com/embed/${id}`;
+
+        ratio.appendChild(iframe);
+        wrapper.appendChild(ratio);
+
+        const label = document.createElement("div");
+        label.style.padding = "10px 12px 12px";
+        label.style.color = "rgba(255,255,255,0.80)";
+        label.style.fontWeight = "900";
+        label.style.fontSize = "13px";
+        label.style.borderTop = "1px solid rgba(255,255,255,0.08)";
+        label.textContent = `Highlight Video ${idx + 1}`;
+        wrapper.appendChild(label);
+
+        grid.appendChild(wrapper);
+      });
+    }
+
+    // ======= GALLERY SETUP =======
+    const galleryImages = [
+  	"images/1b-standing.jpg",
+  	"images/dugout-clapping.jpg",
+  	"images/dugout-kenna.jpg",
+  	"images/hitting-1.jpg",
+  	"images/hitting-2.jpg",
+  	"images/img-0818.jpg",
+  	"images/img-0819.jpg",
+  	"images/img-0820.jpg",
+  	"images/img-0821.jpg",
+  	"images/img-0822.jpg",
+  	"images/tigist-hitting-3.jpg",
+  	"images/tigist-smiles.jpg"
+];
+    ];
+
+    function renderGallery(){
+      const grid = document.getElementById("galleryGrid");
+      grid.innerHTML = "";
+
+      galleryImages.forEach((src, idx) => {
+        const thumb = document.createElement("div");
+        thumb.className = "thumb";
+
+        const img = document.createElement("img");
+        img.loading = "lazy";
+        img.src = src;
+        img.alt = `Gallery photo ${idx + 1}`;
+
+        img.onerror = () => {
+          thumb.style.display = "flex";
+          thumb.style.alignItems = "center";
+          thumb.style.justifyContent = "center";
+          thumb.style.padding = "10px";
+          thumb.style.color = "rgba(255,255,255,0.65)";
+          thumb.style.fontWeight = "950";
+          thumb.style.textAlign = "center";
+          thumb.style.borderStyle = "dashed";
+          thumb.innerHTML = `Add image:<br/><span style="font-weight:900; color: rgba(112,239,241,0.95);">${src}</span>`;
+        };
+
+        thumb.appendChild(img);
+        thumb.addEventListener("click", () => openModal(src, `Photo ${idx + 1}`));
+        grid.appendChild(thumb);
+      });
+    }
+
+    // ======= MODAL =======
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const closeBtn = document.getElementById("closeBtn");
+
+    function openModal(src, title){
+      modalTitle.textContent = title;
+      modalImg.src = src;
+      modal.classList.add("open");
+    }
+    function closeModal(){
+      modal.classList.remove("open");
+      modalImg.src = "";
+    }
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+    // ======= INIT =======
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderVideos();
+    renderGallery();
+  </script>
+</body>
+</html>
